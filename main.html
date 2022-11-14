@@ -5,21 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="/swiper.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Flextest</title>
   </head>
   <body>
-    <div class="items">
-      <div class="item">1</div>
-      <div class="item">2</div>
-      <div class="item">3</div>
-      <div class="item">4</div>
-      <div class="item">5</div>
-      <div class="item">6</div>
-      <div class="item">7</div>
-      <div class="item">8</div>
-      <div class="item">9</div>
-      <div class="item">10</div>
-      <div class="item">11</div>
+    <div class="container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/lenovo.svg" />
+          </div>
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/samsung.svg" />
+          </div>
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/aple.svg" />
+          </div>
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/view sonic.svg" />
+          </div>
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/bosh.svg" />
+          </div>
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/hp.svg" />
+          </div>
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/acer.svg" />
+          </div>
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/sony.svg" />
+          </div>
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/lenovo.svg" />
+          </div>
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/samsung.svg" />
+          </div>
+          <div class="swiper-slide item">
+            <img class="item__image" src="./asset/aple.svg" />
+          </div>
+        </div>
+      </div>
+      <!-- Добавление стрелочек в HTML код -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- Добавление буллитов в HTML код -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Добавление скроллбара в HTML код -->
+      <div class="swiper-scrollbar"></div>
     </div>
+    <script>
+      new Swiper(".swiper-container", {
+        // Вывод стрелок навигации
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          spaceBetween: 2,
+        },
+        // Вывод скроллбара
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          draggable: true,
+        },
+      });
+    </script>
   </body>
 </html>
+
+<!--/*
+<div class="swiper">
+  <div class="swiper-wrapper items">
+    <div class="swiper-slide item">1</div>
+    <div class="swiper-slide item">2</div>
+    <div class="swiper-slide item">3</div>
+    <div class="swiper-slide item">4</div>
+    <div class="swiper-slide item">5</div>
+    <div class="swiper-slide item">6</div>
+    <div class="swiper-slide item">7</div>
+    <div class="swiper-slide item">8</div>
+    <div class="swiper-slide item">9</div>
+    <div class="swiper-slide item">10</div>
+    <div class="swiper-slide item">11</div>
+
+    <div class="swiper-pagination"></div>
+    <If we need navigation buttons 
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    If we need scrollbar 
+    <div class="swiper-scrollbar"></div>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </scrip>
+  </div>
+</div>*/-->
